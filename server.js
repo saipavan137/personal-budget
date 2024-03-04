@@ -49,7 +49,7 @@ app.get('/budget', (req, res) => {
         });
 });
 
-app.get('/add-budget', (req, res) => {
+app.get('/addNewbudget', (req, res) => {
     mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
         .then(() => {
             return namesModel.find({})
